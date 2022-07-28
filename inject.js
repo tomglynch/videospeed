@@ -611,11 +611,11 @@ function initializeNow(document) {
         if (item) {
           
           // ADD TIME HERE
-          a = performance.now();
-          log("HEHRHEHREIt took " + (a - b) + " ms.",5);
+          // a = performance.now();
+          // log("HEHRHEHREIt took " + (a - b) + " ms.",5);
           runAction(item.action, item.value);
-          b = performance.now();
-          log("It took " + (b - a) + " ms.",5);
+          // b = performance.now();
+          // log("It took " + (b - a) + " ms.",5);
           // ADD TIME DIFFERENCE HERE
           if (item.force === "true") {
             // disable websites key bindings
@@ -762,7 +762,7 @@ function runAction(action, value, e) {
       return;
     }
 
-    // showController(controller);
+    showController(controller);
 
     if (!v.classList.contains("vsc-cancelled")) {
       if (action === "rewind") {
